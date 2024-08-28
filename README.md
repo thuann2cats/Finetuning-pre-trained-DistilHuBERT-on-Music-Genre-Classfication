@@ -1,0 +1,5 @@
+In this [experiment](Finetuning-DistilHuBERT-for-Music-Genre-Classification.ipynb), I fine-tuned a pre-trained transformer model, `DistilHuBERT`, for music genre classification using the `GTZAN` dataset, a collection of 1,000 30-second music clips across 10 genres. (I followed a tutorial in the Hugging Face Audio course, but the code here was my own. I learned the general data preprocessing and training approach and wrote my own scripts.)
+
+With the feature extractor that came with the model, I resampled the audio to the appropriate frequency, and normalized audio data to zero mean and unit variance. The model was then fine-tuned to predict music genres from raw audio waveforms. 
+
+For demonstration purpose, the model was trained for 10 epochs and achieved about 80% accuracy on a testing set.
